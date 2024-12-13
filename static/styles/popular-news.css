@@ -73,7 +73,7 @@
 }
 
 .popular-card:nth-child(2) {
-    background: url("/static/images/new-news/art-3.jpg") no-repeat;
+    background: url("static/images/new-news/art-3.jpg") no-repeat;
     background-size: 100% 100%;
 }
 
