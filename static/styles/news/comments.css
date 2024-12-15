@@ -1,0 +1,134 @@
+.comments > .content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3em 0;
+}
+
+.comments > .content > .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.comments > .content > .top > .left {
+    display: flex;
+    gap: 1em;
+}
+
+.comments > .content > .top h2 {
+    font-size: var(--fz-h1);
+}
+
+.comments > .content > .top span {
+    color: var(--color-dark-gray);
+    font-size: var(--fz-h1);
+}
+
+.comments > .content > .top > a {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: var(--fz-small);
+    font-weight: bolder;
+    color: var(--color-light-black);
+    padding: 0.75em 1em;
+    border: 1px solid var(--color-dark-gray);
+    border-radius: 1.5em;
+}
+
+.comments > .content > .top > a > i {
+    color: var(--color-dark-gray);
+}
+
+.comment {
+    display: flex;
+    gap: 1em;
+    padding: 1em 0;
+    border-top: 1px solid var(--color-light-gray);
+}
+
+.comment img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 1px 4px 6px var(--color-dark-gray);
+}
+
+.comment-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.comment-text > .top {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.comment-text > .top span {
+    font-weight: bolder;
+}
+
+.comment-text > .top time {
+    color: var(--color-dark-gray);
+    font-size: var(--fz-tiny);
+}
+
+.comment-text p {
+    line-height: 2;
+}
+
+.comment-text > .bottom {
+    display: flex;
+    gap: 1em;
+}
+
+.comment-text > .bottom * {
+    color: var(--color-dark-gray);
+    font-size: var(--fz-small);
+}
+
+.comments > .content button {
+    width: 30%;
+    font-weight: bolder;
+    background-color: transparent;
+    margin-top: 2em;
+    padding: 12px;
+    border: 1px solid var(--color-light-gray);
+    border-radius: 2em;
+}
+
+.add-comment {
+    margin-top: 4em;
+}
+
+.add-comment > .content {
+    display: flex;
+    gap: 1em;
+    width: max-content;
+    margin: 0 auto;
+    padding: 2em;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.add-comment img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 1px 4px 6px var(--color-light-gray);
+}
+
+.add-comment form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em
+}
+
+.add-comment textarea {
+}
