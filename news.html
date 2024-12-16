@@ -27,21 +27,21 @@
                     <button>&Congruent;</button>
                     <span>Разделы</span>
                     <form action="#" method="get">
-                        <i class="fas fa-search"></i>
+                        <i class="fas fa-search" aria-hidden="true"></i>
                         <input type="search" name="search" id="search" placeholder="Поиск">
                     </form>
                 </div>
                 <div class="header-top-right">
-                    <i class="fas fa-user"></i>
+                    <i class="fas fa-user" aria-hidden="true"></i>
                     <button class="sign-in-button">Войти</button>
                 </div>
             </section>
             <section class="header-bottom">
-                <img src="static/images/bronse_horsmen.png" alt="Медный всадник">
+                <img src="static/images/bronse_horsmen.png" alt="Медный всадник" aria-hidden="true">
                 <span>Новости России и мира</span>
                 <h1>Российский Инсайдер</h1>
                 <time datetime="2024-12-12">Четверг, 12 декабря, 2024</time>
-                <span><i class="fas fa-sun"></i>&nbsp;&nbsp;-10 <sup>o</sup>C</span>
+                <span><i class="fas fa-sun" aria-hidden="true"></i>&nbsp;&nbsp;-10 <sup>o</sup>C</span>
             </section>
         </div>
     </header>
@@ -67,7 +67,7 @@
                 <div class="top-information">
                     <span>Наука</span>
                     <div class="right-information">
-                        <i class="fa fa-home"></i>
+                        <i class="fa fa-home" aria-hidden="true"></i>
                         <button>←&nbsp;Предыдущая</button>
                         <button>Следующая&nbsp;→</button>
                     </div>
@@ -77,27 +77,27 @@
                 <div class="bottom-information">
                     <div class="indicators">
                         <div class="time">
-                            <i class="fa fa-clock"></i>
+                            <i class="fa fa-clock" aria-hidden="true"></i>
                             <time datetime="2024-12-12">Дек 12, 15:30</time>
                         </div>
                         <div class="likes">
-                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
                             <span>245</span>
                         </div>
                         <div class="comments">
-                            <i class="fa fa-comment"></i>
+                            <i class="fa fa-comment" aria-hidden="true"></i>
                             <span>23</span>
                         </div>
                     </div>
                     <div class="shares">
-                        <i class="fa fa-share"></i>
+                        <i class="fa fa-share" aria-hidden="true"></i>
                         <span>216</span>
                     </div>
                 </div>
             </div>
         </section>
         <section class="news-text">
-            <div class="author-card">
+            <article class="author-card">
                 <div class="author">
                     <img src="static/images/author2.png" alt="Фото">
                     <h2>Петрова Анастасия</h2>
@@ -105,17 +105,17 @@
                 </div>
                 <span>82 статьи</span>
                 <div class="social">
-                    <i class="fa fa-facebook"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
                 </div>
-                <div class="bottom">
-                    <span>Узнать о авторе</span>
-                </div>
-            </div>
-            <div class="another-news">
+                <footer class="bottom">
+                    <a href="#">Узнать о авторе</a>
+                </footer>
+            </article>
+            <article class="another-news">
                 <h2>Статья по теме</h2>
-                <img src="static/images/new-news/hero-1.jpg" alt="">
+                <img src="static/images/new-news/hero-1.jpg" alt="Фото">
                 <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quaerat deleniti! Aliquid, tempore
@@ -123,17 +123,17 @@
                 </p>
                 <div class="bottom">
                     <div class="views">
-                        <i class="fa fa-eye"></i>
+                        <i class="fa fa-eye" aria-hidden="true"></i>
                         <span>1426</span>
                     </div>
                     <div class="comments">
-                        <i class="fa fa-comments"></i>
+                        <i class="fa fa-comments" aria-hidden="true"></i>
                         <span>102</span>
                     </div>
                 </div>
-            </div>
+            </article>
             <div class="container">
-                <div class="news-text-block">
+                <section class="news-text-block">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae temporibus quod officiis
                         perspiciatis
@@ -156,9 +156,9 @@
                         quis, eaque
                         aperiam quam asperiores fuga est iste ipsa pariatur nemo numquam exercitationem facilis esse?
                     </p>
-                </div>
+                </section>
                 <h2 class="header">Lorem, ipsum.</h2>
-                <div class="news-text-block">
+                <section class="news-text-block">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae temporibus quod officiis
                         perspiciatis
@@ -196,21 +196,21 @@
                         nobis
                         repellendus ipsam, ex veritatis at?
                     </p>
-                </div>
-                <div class="images">
-                    <img src="static/images/new-news/hero-1.jpg" alt="">
+                </section>
+                <section class="images">
+                    <img src="static/images/new-news/hero-1.jpg" alt="фото" loading="lazy" aria-hidden="true">
                     <div class="bottom-information">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                         <div class="author">
-                            <img src="static/images/author2.png" alt="">
+                            <img src="static/images/author2.png" alt="фото" loading="lazy">
                             <div class="author-right-information">
                                 <p>Петрова Анастасия</p>
                                 <span>Фотограф</span>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="news-text-block">
+                </section>
+                <section class="news-text-block">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae temporibus quod officiis
                         perspiciatis
@@ -248,8 +248,8 @@
                         nobis
                         repellendus ipsam, ex veritatis at?
                     </p>
-                </div>
-                <div class="quote">
+                </section>
+                <section class="quote">
                     <h2>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus perspiciatis doloremque
                         aspernatur! In odit totam recusandae dolor velit, libero natus.
@@ -257,12 +257,12 @@
                         Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </h2>
                     <div class="author">
-                        <img src="static/images/author2.png" alt="">
+                        <img src="static/images/author2.png" alt="фото" loading="lazy">
                         <p>Петрова Анастасия</p>
                         <span>Путешественник</span>
                     </div>
-                </div>
-                <div class="news-text-block">
+                </section>
+                <section class="news-text-block">
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab vitae temporibus quod officiis
                         perspiciatis
@@ -285,88 +285,88 @@
                         quis, eaque
                         aperiam quam asperiores fuga est iste ipsa pariatur nemo numquam exercitationem facilis esse?
                     </p>
-                </div>
-                <div class="tags">
+                </section>
+                <section class="tags">
                     <span>Путешествия</span>
                     <span>Природа</span>
                     <span>Мир</span>
                     <span>Наука</span>
-                </div>
-                <div class="support-author">
+                </section>
+                <section class="support-author">
                     <h2>Поддержите автора</h2>
                     <div class="types-of-support">
                         <div class="type-of-support">
-                            <i class="fa fa-heart"></i>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
                             <p>Лайк</p>
                             <span>42</span>
                         </div>
                         <div class="type-of-support">
-                            <i class="fa fa-vk"></i>
+                            <i class="fa fa-vk" aria-hidden="true"></i>
                             <p>Поделиться</p>
                             <span>42</span>
                         </div>
                         <div class="type-of-support">
-                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
                             <p>Поделиться</p>
                             <span>42</span>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
         <section class="news">
             <article class="news-card">
-                <img src="static/images/new-news/hero-1.jpg" alt="">
+                <img src="static/images/new-news/hero-1.jpg" alt="Фото" loading="lazy" aria-hidden="true">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                 <div class="statistic">
                     <div class="views">
-                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-eye" aria-hidden="true"></i>
                         <span>1525</span>
                     </div>
                     <div class="comments">
-                        <i class="fa fa-comment"></i>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
                         <span>82</span>
                     </div>
                 </div>
             </article>
             <article class="news-card">
-                <img src="static/images/new-news/hero-1.jpg" alt="">
+                <img src="static/images/new-news/hero-1.jpg" alt="Фото" loading="lazy" aria-hidden="true">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                 <div class="statistic">
                     <div class="views">
-                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-eye" aria-hidden="true"></i>
                         <span>1525</span>
                     </div>
                     <div class="comments">
-                        <i class="fa fa-comment"></i>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
                         <span>82</span>
                     </div>
                 </div>
             </article>
             <article class="news-card">
-                <img src="static/images/new-news/hero-1.jpg" alt="">
+                <img src="static/images/new-news/hero-1.jpg" alt="Фото" loading="lazy" aria-hidden="true">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                 <div class="statistic">
                     <div class="views">
-                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-eye" aria-hidden="true"></i>
                         <span>1525</span>
                     </div>
                     <div class="comments">
-                        <i class="fa fa-comment"></i>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
                         <span>82</span>
                     </div>
                 </div>
             </article>
             <article class="news-card">
-                <img src="static/images/new-news/desc-5.jpg" alt="">
+                <img src="static/images/new-news/art-3.jpg" alt="Фото" loading="lazy" aria-hidden="true">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                 <div class="statistic">
                     <div class="views">
-                        <i class="fas fa-eye"></i>
+                        <i class="fas fa-eye" aria-hidden="true"></i>
                         <span>1525</span>
                     </div>
                     <div class="comments">
-                        <i class="fa fa-comment"></i>
+                        <i class="fa fa-comment" aria-hidden="true"></i>
                         <span>82</span>
                     </div>
                 </div>
@@ -384,9 +384,9 @@
                         Комментировать
                     </a>
                 </div>
-                <div class="all-comments">
-                    <div class="comment">
-                        <img src="static/images/author2.png" alt="">
+                <section class="all-comments">
+                    <article class="comment">
+                        <img src="static/images/author2.png" alt="фото" loading="lazy" aria-hidden="true">
                         <div class="comment-text">
                             <div class="top">
                                 <span>Петрова Анастасия</span>
@@ -399,19 +399,19 @@
                             </p>
                             <div class="bottom">
                                 <div class="reply">
-                                    <i class="fa fa-comment"></i>
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
                                     <span>Ответить</span>
                                 </div>
                                 <div class="likes">
-                                    <i class="fa fa-thumbs-up"></i>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                     <span>&nbsp;+3&nbsp;</span>
-                                    <i class="fa fa-thumbs-down"></i>
+                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="comment" data-level="1">
-                        <img src="static/images/author2.png" alt="">
+                    </article>
+                    <article class="comment" data-level="1">
+                        <img src="static/images/author2.png" alt="фото" loading="lazy" aria-hidden="true">
                         <div class="comment-text">
                             <div class="top">
                                 <span>Петрова Анастасия</span>
@@ -424,19 +424,19 @@
                             </p>
                             <div class="bottom">
                                 <div class="reply">
-                                    <i class="fa fa-comment"></i>
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
                                     <span>Ответить</span>
                                 </div>
                                 <div class="likes">
-                                    <i class="fa fa-thumbs-up"></i>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                     <span>&nbsp;+3&nbsp;</span>
-                                    <i class="fa fa-thumbs-down"></i>
+                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="comment" data-level="2">
-                        <img src="static/images/author2.png" alt="">
+                    </article>
+                    <article class="comment" data-level="2">
+                        <img src="static/images/author2.png" alt="фото" loading="lazy" aria-hidden="true">
                         <div class="comment-text">
                             <div class="top">
                                 <span>Петрова Анастасия</span>
@@ -449,19 +449,19 @@
                             </p>
                             <div class="bottom">
                                 <div class="reply">
-                                    <i class="fa fa-comment"></i>
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
                                     <span>Ответить</span>
                                 </div>
                                 <div class="likes">
-                                    <i class="fa fa-thumbs-up"></i>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                     <span>&nbsp;+3&nbsp;</span>
-                                    <i class="fa fa-thumbs-down"></i>
+                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="comment">
-                        <img src="static/images/author2.png" alt="">
+                    </article>
+                    <article class="comment">
+                        <img src="static/images/author2.png" alt="фото" loading="lazy" aria-hidden="true">
                         <div class="comment-text">
                             <div class="top">
                                 <span>Петрова Анастасия</span>
@@ -474,17 +474,17 @@
                             </p>
                             <div class="bottom">
                                 <div class="reply">
-                                    <i class="fa fa-comment"></i>
+                                    <i class="fa fa-comment" aria-hidden="true"></i>
                                     <span>Ответить</span>
                                 </div>
                                 <div class="likes">
-                                    <i class="fa fa-thumbs-up"></i>
+                                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
                                     <span>&nbsp;+3&nbsp;</span>
-                                    <i class="fa fa-thumbs-down"></i>
+                                    <i class="fa fa-thumbs-down" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                     <script>
                         function applyCommentIndentation() {
                             const comments = document.querySelectorAll('.comment');
@@ -497,16 +497,16 @@
 
                         applyCommentIndentation();
                     </script>
-                </div>
+                </section>
                 <button>
-                    <i class="fa fa-refresh"></i>
+                    <i class="fa fa-refresh" aria-hidden="true"></i>
                     <span>&nbsp;Загрузить больше комментариев</span>
                 </button>
-                <div class="add-comment">
+                <section class="add-comment">
                     <div class="content">
                         <h2>Что вы об этом думаете?</h2>
                         <div class="bottom">
-                            <img src="static/images/author2.png" alt="">
+                            <img src="static/images/author2.png" alt="фото" loading="lazy" aria-hidden="true">
                             <form action="#">
                                 <div class="text">
                                     <textarea name="comment-input" id="comment-input"></textarea>
@@ -515,7 +515,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </section>
             </div>
         </section>
     </main>
@@ -578,12 +578,12 @@
             </section>
             <section class="contacts">
                 <ul class="left-information">
-                    <li><a href="#"><img src="static/images/bronse_horsmen.ico" alt=""></a></li>
+                    <li><a href="#"><img src="static/images/bronse_horsmen.ico" alt="фото" loading="lazy" aria-hidden="true"></a></li>
                     <li>Связаться с нами</li>
                 </ul>
                 <ul class="right-information">
-                    <li><a href="#"><img src="static/images/logos/telegram.png" alt=""></a></li>
-                    <li><a href="#"><img src="static/images/logos/vk.png" alt=""></a></li>
+                    <li><a href="#"><img src="static/images/logos/telegram.png" alt="логотип телеграмм" loading="lazy"></a></li>
+                    <li><a href="#"><img src="static/images/logos/vk.png" alt="логотип вк" loading="lazy"></a></li>
                 </ul>
             </section>
         </div>
