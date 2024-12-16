@@ -2,6 +2,10 @@
     background-color: var(--color-light-black);
 }
 
+.hot article {
+    cursor: pointer;
+}
+
 .hot > .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -19,7 +23,7 @@
 .hot  .block:nth-child(1) {
     grid-row: span 2; 
     grid-column: span 2;
-    background-image: url("../images/new-news/hero-1.jpg");
+    background-image: url("../../images/new-news/hero-1.jpg");
     background-size: cover;
     background-position: 50% 50%;
 }

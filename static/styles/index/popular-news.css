@@ -15,6 +15,7 @@
     background-color: var(--color-white);
     padding: 1em;
     border-radius: 1em;
+    cursor: pointer;
 }
 
 .popular-card:nth-child(1) {
@@ -73,7 +74,7 @@
 }
 
 .popular-card:nth-child(2) {
-    background: url("../images/new-news/art-3.jpg") no-repeat;
+    background: url("../../images/new-news/art-3.jpg") no-repeat;
     background-size: 100% 100%;
 }
 

@@ -43,10 +43,20 @@
 }
 
 .top-part h1 {
+    position: relative;
     width: 75%;
     line-height: 1.25;
     color: white;
     --fz-h1: 55px;
+    font-size: var(--fz-h1);
+}
+
+.top-part h1 > i {
+    position: absolute;
+    left: -2em;
+    top: 12px;
+    color: var(--color-dark-gray);
+    --fz-h1: 36px;
     font-size: var(--fz-h1);
 }
 

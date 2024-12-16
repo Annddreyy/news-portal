@@ -2,6 +2,10 @@
     background-color: var(--color-light-gray);
 }
 
+.notes article {
+    cursor: pointer;
+}
+
 .notes > .container {
     display: flex;
     justify-content: space-between;
