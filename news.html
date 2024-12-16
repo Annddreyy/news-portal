@@ -113,6 +113,25 @@
                     <span>Узнать о авторе</span>
                 </div>
             </div>
+            <div class="another-news">
+                <h2>Статья по теме</h2>
+                <img src="static/images/new-news/hero-1.jpg" alt="">
+                <h3>Lorem ipsum, dolor sit amet consectetur adipisicing.</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quaerat deleniti! Aliquid, tempore
+                    dolores quae, sint expedita cupiditate dolore temporibus repudiandae, eligendi possimus provident?
+                </p>
+                <div class="bottom">
+                    <div class="views">
+                        <i class="fa fa-eye"></i>
+                        <span>1426</span>
+                    </div>
+                    <div class="comments">
+                        <i class="fa fa-comments"></i>
+                        <span>102</span>
+                    </div>
+                </div>
+            </div>
             <div class="container">
                 <div class="news-text-block">
                     <p>
@@ -391,7 +410,32 @@
                             </div>
                         </div>
                     </div>
-                    <div class="comment">
+                    <div class="comment" data-level="1">
+                        <img src="static/images/author2.png" alt="">
+                        <div class="comment-text">
+                            <div class="top">
+                                <span>Петрова Анастасия</span>
+                                <time datetime="2024-12-12">Дек 12, 12:30</time>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque vel animi incidunt
+                                laudantium, hic qui ducimus voluptas inventore pariatur! Quibusdam pariatur nam minima
+                                necessitatibus.
+                            </p>
+                            <div class="bottom">
+                                <div class="reply">
+                                    <i class="fa fa-comment"></i>
+                                    <span>Ответить</span>
+                                </div>
+                                <div class="likes">
+                                    <i class="fa fa-thumbs-up"></i>
+                                    <span>&nbsp;+3&nbsp;</span>
+                                    <i class="fa fa-thumbs-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment" data-level="2">
                         <img src="static/images/author2.png" alt="">
                         <div class="comment-text">
                             <div class="top">
@@ -441,31 +485,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="comment">
-                        <img src="static/images/author2.png" alt="">
-                        <div class="comment-text">
-                            <div class="top">
-                                <span>Петрова Анастасия</span>
-                                <time datetime="2024-12-12">Дек 12, 12:30</time>
-                            </div>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore eaque vel animi incidunt
-                                laudantium, hic qui ducimus voluptas inventore pariatur! Quibusdam pariatur nam minima
-                                necessitatibus.
-                            </p>
-                            <div class="bottom">
-                                <div class="reply">
-                                    <i class="fa fa-comment"></i>
-                                    <span>Ответить</span>
-                                </div>
-                                <div class="likes">
-                                    <i class="fa fa-thumbs-up"></i>
-                                    <span>&nbsp;+3&nbsp;</span>
-                                    <i class="fa fa-thumbs-down"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <script>
+                        function applyCommentIndentation() {
+                            const comments = document.querySelectorAll('.comment');
+
+                            comments.forEach(comment => {
+                                const level = parseInt(comment.dataset.level, 10);
+                                comment.style.paddingLeft = `${level * 3}em`;
+                            });
+                        }
+
+                        applyCommentIndentation();
+                    </script>
                 </div>
                 <button>
                     <i class="fa fa-refresh"></i>
@@ -473,11 +504,14 @@
                 </button>
                 <div class="add-comment">
                     <div class="content">
+                        <h2>Что вы об этом думаете?</h2>
                         <div class="bottom">
                             <img src="static/images/author2.png" alt="">
                             <form action="#">
-                                <textarea name="comment-input" id="comment-input"></textarea>
-                                <input type="submit" value="Отправить">
+                                <div class="text">
+                                    <textarea name="comment-input" id="comment-input"></textarea>
+                                </div>
+                                <button>Отправить</button>
                             </form>
                         </div>
                     </div>
